@@ -12,7 +12,7 @@ const server = http.createServer(app);
 
 const PORT = process.env.PORT || 3000;
 
-const allowedOrigin: string[] = ["http:localhost:5173"];
+const allowedOrigin: string[] = ["http://localhost:5173"];
 
 const corsOptions: cors.CorsOptions = {
   origin: (
