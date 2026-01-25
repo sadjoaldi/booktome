@@ -1,12 +1,11 @@
-import BookSearchResult from "./pages/bookSearchResult.tsx";
+import { RouterProvider } from "react-router";
+import { router } from "./router/route.ts";
 import "./styles/app.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <BookSearchResult />
+      <RouterProvider router={router} />
     </div>
   );
 }
-
-export default App;
