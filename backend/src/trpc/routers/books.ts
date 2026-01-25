@@ -7,7 +7,7 @@ export const booksRouter = router({
   searchBooks: publicProcedure
     .input(
       z.object({
-        query: z.string().min(1),
+        query: z.string().min(0).optional().default(""),
         author: z.string().optional(),
         page: z.number().min(1).default(1),
       }),

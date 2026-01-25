@@ -1,0 +1,28 @@
+.search-books {
+  padding: 20px;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    color: var(--paragraph-color);
+  }
+
+  span {
+    color: var(--span-color);
+  }
+
+  .no-result {
+    color: var(--no-result-color);
+    font-weight: bold;
+  }
+
+  .search-results {
+    p {
+      margin-top: 1rem;
+      text-align: center;
+      color: var(--paragraph-color);
+    }
+  }
+}

@@ -43,7 +43,7 @@ export const searchBooks = async (
   const response = await axios.get<OpenLibrarySearchResponse>(
     `${baseUrl}/search.json`,
     {
-      params: { q: query, author, page },
+      params: { q: query, author, page, limit: 20 },
     },
   );
 

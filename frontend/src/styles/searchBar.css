@@ -1,0 +1,20 @@
+.search-bar {
+  margin: 1.4rem 0;
+  display: flex;
+  gap: 10px;
+
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    color: var(--search-color);
+
+    &:focus {
+      outline: none;
+      border-color: var(--input-focus-border-color);
+      box-shadow: 0 0 5px var(--search-box-shadow-color);
+    }
+  }
+}
