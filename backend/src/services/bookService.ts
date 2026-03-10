@@ -14,7 +14,7 @@ export class BookService {
       total: data.numFound,
       page,
       books: data.docs.map((book: OpenLibrarySearchDoc) => ({
-        id: book.key,
+        id: book.key.replace("/works/", ""),
         title: book.title,
         authors: book.author_name ?? [],
         year: book.first_publish_year,
@@ -41,8 +41,11 @@ export class BookService {
         ? `https://covers.openlibrary.org/b/id/${work.covers[0]}-L.jpg`
         : null,
       authors:
-        work.authors?.map((auth) => auth.author.key.replace("/authors/", "")) ??
-        [],
+        work.authors?.map((auth) => ({
+          author: {
+            key: auth.author.key,
+          },
+        })) ?? [],
     };
   }
 

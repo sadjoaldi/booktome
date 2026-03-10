@@ -67,6 +67,11 @@ export default function BookSearchResult() {
     <div className="search-books">
       <h1>Recherche de Livres</h1>
 
+      <p className="intro-text">
+        Utilisez la barre de recherche ci-dessous pour trouver des livres par
+        titre ou par auteur. Les résultats s'affichent dès que vous tapez au
+        moins quatre caractères. Bonne lecture!
+      </p>
       <SearchBar
         searchQuery={searchQuery}
         setSearchQuery={(value) => handleSearchChange("query", value)}

@@ -1,0 +1,6 @@
+.book-info {
+  padding: 20px;
+  background-color: var(--background-color);
+  box-shadow: 0 4px 8px var(--shadow-color);
+  border-radius: 8px;
+}

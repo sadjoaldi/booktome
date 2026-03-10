@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router";
-import BookDetail from "../pages/booksDetail";
 import BookSearchResult from "../pages/bookSearchResult";
+import BooksInfo from "../pages/booksInfo";
 
 const routes = [
   {
@@ -9,7 +9,7 @@ const routes = [
   },
   {
     path: "/books/:workId",
-    Component: BookDetail,
+    Component: BooksInfo,
   },
 ];
 
